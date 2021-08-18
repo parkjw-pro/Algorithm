@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class P_10026_적록색약 {
 	
-	static int N;
+	static int N1;
 	static char arr[][];
 	static boolean vis[][];
     static int dx[]= {-1,0,1,0};

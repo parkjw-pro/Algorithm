@@ -1,10 +1,49 @@
 package com.ssafy;
 
 public class P_11441_합구하기 {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		
+		int N = Integer.parseInt(st.nextToken()); 
+		int M = Integer.parseInt(st.nextToken()); 
+		
+		int arr[] = new int[N];
+		int sum[] = new int[N];
+		int a[] = new int[M];
+		int b[] = new int[M];
+		
+		st = new StringTokenizer(br.readLine());
+		for (int i = 0; i < N; i++) {
+			arr[i] = Integer.parseInt(st.nextToken()); 
+		}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		for (int i = 0; i < M; i++) {
+			st = new StringTokenizer(br.readLine());
+			a[i] = Integer.parseInt(st.nextToken())-1; 
+			b[i] = Integer.parseInt(st.nextToken())-1; 
 
+		}
+		sum[0] = arr[0];
+		for (int i = 1; i < N; i++) {
+			sum[i] = sum[i-1] + arr[i];
+		}
+		
+		
+		
+		for (int i = 0; i < b.length; i++) {
+			if(a[i]==0) {
+				System.out.println(sum[b[i]]);
+			}else {
+				System.out.println(sum[b[i]]-sum[a[i]-1]);
+			}
+		}
+
+		
+
+
+
+		
 	}
 
 }

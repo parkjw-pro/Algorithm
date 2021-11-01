@@ -5,9 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-// 치킨가계를 조합으로 선택 후, 각 조합이 완성되면 치킨 거리를 계산 최저값을 찾는다.
+// 치킨가게를 조합으로 선택 후, 각 조합이 완성되면 치킨 거리를 계산 최저값을 찾는다.
 // 치킨 거리를 계산할 때는 집을 기준으로 치킨 거리를 계산하여 가장 적은 값을 찾는다.
-// 반대로 치킨가계를 기준으로 계산하면 늘 가장 가까운 치킨가계를 선택하게 되어 오류
+// 반대로 치킨가게를 기준으로 계산하면 늘 가장 가까운 치킨가게를 선택하게 되어 오류
 // nextPermutation way
 public class Problem_15686_NP {
 
